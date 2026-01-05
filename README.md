@@ -173,7 +173,6 @@ src/
 │   ├── YouMayAlsoLike.jsx
 │   ├── FAQ.jsx
 │   ├── Footer.jsx
-│   └── Tabs.jsx
 ├── App.jsx
 ├── index.css
 └── main.jsx
