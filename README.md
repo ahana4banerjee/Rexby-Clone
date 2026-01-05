@@ -182,7 +182,7 @@ src/
 ---
 
 ## 11. How to Run Locally
-git clone 
+git clone https://github.com/ahana4banerjee/Rexby-Clone.git
 
 ```bash
 npm install
