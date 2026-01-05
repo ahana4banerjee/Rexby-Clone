@@ -14,6 +14,8 @@ https://www.rexby.com/asasteinars/norway
 
 ## 2. Screenshots
 
+**Screen Recording**: https://drive.google.com/file/d/17gBCt6AI7cL0XacwGnnwEBykZV32jw5N/view?usp=sharing
+
 **Desktop View:**  
 <img width="1366" height="669" alt="Landing page" src="https://github.com/user-attachments/assets/0329e15b-3c14-44cc-8d46-fa7afe9bc9bb" />
 
