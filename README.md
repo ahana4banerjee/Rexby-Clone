@@ -39,7 +39,8 @@ https://www.rexby.com/asasteinars/norway
 
 ## 4. Features Implemented
 
-- **Responsive UI Clone:** Replication of Hero, Navigation, and Grid layouts across mobile and desktop.  
+- **Responsive UI Clone:** Replication of Hero, Navigation, and Grid layouts across mobile and desktop.
+- **Enhanced Hero Section:** The Hero section was refined by wrapping the content in a full-width background image with gradient overlays to provide a premium, immersive feel, mirroring the high-quality aesthetic of the original site.
 - **Sticky Action Navbar:** Sticks on scroll with *Preview* and *Get Access* actions.  
 
 **Interactive Maps**
@@ -173,7 +174,6 @@ src/
 │   ├── YouMayAlsoLike.jsx
 │   ├── FAQ.jsx
 │   ├── Footer.jsx
-│   └── Tabs.jsx
 ├── App.jsx
 ├── index.css
 └── main.jsx
@@ -182,7 +182,7 @@ src/
 ---
 
 ## 11. How to Run Locally
-git clone 
+git clone https://github.com/ahana4banerjee/Rexby-Clone.git
 
 ```bash
 npm install
