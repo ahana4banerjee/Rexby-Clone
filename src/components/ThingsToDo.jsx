@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { X, Camera, MapPin, Mountain, ArrowRight, Share2, Expand, Sparkles } from 'lucide-react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
-// Fix for default Leaflet icons
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -55,10 +53,10 @@ const ThingsToDo = () => {
   return (
    <section className="max-w-[1200px] mx-auto px-6 py-16 border-t border-gray-100">
       
-      {/* --- Section Layout: Split Text & Carousel --- */}
+      {/* --- Section Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        {/* Left: Text Content */}
+        {/* Left */}
         <div className="lg:col-span-4 space-y-3 pt-4">
           <div className="flex items-center gap-4">
              <button className="p-2 rounded-full hover:bg-gray-100 border border-gray-200">
@@ -82,7 +80,7 @@ const ThingsToDo = () => {
           </a>
         </div>
 
-        {/* Right: Scrolling List */}
+        {/* Right */}
         <div className="lg:col-span-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 pb-8">
 
@@ -134,7 +132,7 @@ const ThingsToDo = () => {
           {/* Modal Container */}
           <div className="bg-white rounded-3xl w-full max-w-5xl h-[85vh] overflow-hidden shadow-2xl relative flex flex-col md:flex-row">
             
-            {/* Close Button (Absolute) */}
+            {/* Close Button */}
             <button 
               onClick={() => setSelectedItem(null)}
               className="absolute top-4 right-4 z-50 bg-white/80 backdrop-blur p-2 rounded-full hover:bg-white transition-colors"
@@ -142,14 +140,14 @@ const ThingsToDo = () => {
               <X size={24} />
             </button>
 
-            {/* LEFT SIDE: Image */}
+            {/*  Image */}
             <div className="w-full md:w-[55%] h-full relative bg-gray-100">
               <img 
                 src={selectedItem.image} 
                 className="w-full h-full object-cover" 
                 alt="Detail" 
               />
-              {/* Carousel Indicators (Static Mock) */}
+              {/* Carousel Indicators */}
               <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-white shadow-sm"></div>
                 <div className="w-2 h-2 rounded-full bg-white/50 shadow-sm"></div>
@@ -157,7 +155,7 @@ const ThingsToDo = () => {
               </div>
             </div>
 
-            {/* RIGHT SIDE: Content */}
+            {/* RIGHT SIDE */}
             <div className="w-full md:w-[45%] h-full overflow-y-auto p-8 md:p-10 flex flex-col relative">
               
               {/* Header */}

@@ -52,7 +52,6 @@ const LocalSecrets = () => {
     { id: 5, pos: [68.4, 14.7], type: 'hike', title: "Secret Trail" },
   ];
 
-  // --- FULL SCREEN VIEW ---
   if (isFullMap) {
     return (
       <div className="fixed inset-0 z-[9999] bg-white w-full h-full flex flex-col animate-in fade-in duration-300">
@@ -81,7 +80,6 @@ const LocalSecrets = () => {
     );
   }
 
-  // --- PAGE SECTION VIEW ---
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-16">
       <div className="flex items-center gap-4 mb-8">
@@ -124,7 +122,7 @@ const LocalSecrets = () => {
              </div>
         </div>
         
-        {/* Fullscreen Icon (Top Right) */}
+        {/* Fullscreen Icon */}
         <div className="absolute top-6 right-6 bg-white p-3 rounded-full shadow-md z-[400]">
            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
         </div>

@@ -10,8 +10,6 @@ const Hero = () => {
     <>
       <section className="relative w-full min-h-[600px] md:h-[700px] overflow-hidden flex items-end md:items-center">
         
-        {/* --- HERE IS THE FIX --- */}
-        {/* We pass the setShowLogin function down to the Header */}
         <Header onLoginClick={() => setShowLogin(true)} />
 
         {/* Background Image */}
@@ -86,7 +84,7 @@ const Hero = () => {
         </div>
       )}
 
-      {/* --- LOGIN POPUP MODAL (The Exact Code You Wanted) --- */}
+      {/* --- LOGIN POPUP MODAL --- */}
       {showLogin && (
         <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
             <div className="bg-white rounded-[32px] w-full max-w-md overflow-hidden shadow-2xl relative">

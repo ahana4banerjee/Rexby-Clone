@@ -25,7 +25,7 @@ const AskMyGuide = () => {
                 <span>AI Digital Version</span>
              </div>
           </div>
-          <div className="w-10" /> {/* Spacer for centering */}
+          <div className="w-10" /> 
         </div>
 
         {/* Chat Area */}
@@ -99,7 +99,7 @@ const AskMyGuide = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mt-8">
         
-        {/* LEFT COLUMN: Text */}
+        {/* LEFT COLUMN */}
         <div className="lg:col-span-5 space-y-6 pt-4">
           <h3 className="text-2xl font-black text-rexby-dark">
             Ask my Guide Anything
@@ -116,7 +116,7 @@ const AskMyGuide = () => {
           </button>
         </div>
 
-        {/* RIGHT COLUMN: Chat Card Preview */}
+        {/* RIGHT COLUMN */}
         <div className="lg:col-span-7">
           <div className="border border-gray-200 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white max-w-xl">
             

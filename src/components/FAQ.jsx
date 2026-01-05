@@ -35,20 +35,20 @@ const FAQ = () => {
     <section className="max-w-[1200px] mx-auto px-6 py-20 border-t border-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        {/* LEFT COLUMN: Title */}
+        {/* LEFT COLUMN */}
         <div className="lg:col-span-4">
           <h2 className="text-3xl font-black text-rexby-dark leading-tight">
             Your questions, answered
           </h2>
         </div>
 
-        {/* RIGHT COLUMN: Accordion List */}
+        {/* RIGHT COLUMN */}
         <div className="lg:col-span-8">
           <div className="divide-y divide-gray-100 border-t border-gray-100 border-b">
             {questions.map((item, index) => (
               <div key={item.id} className="py-6">
                 
-                {/* Question Header (Clickable) */}
+                {/* Question Header  */}
                 <button 
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex items-center justify-between text-left group"

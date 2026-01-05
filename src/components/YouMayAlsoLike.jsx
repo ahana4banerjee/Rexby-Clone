@@ -49,7 +49,6 @@ const YouMayAlsoLike = () => {
         
         {/* New Page Content */}
         <div className="max-w-7xl mx-auto">
-            {/* Hero for the new page */}
             <div className="relative h-[60vh] w-full">
                 <img src={selectedGuide.image} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black/40 flex items-end p-12">
@@ -83,7 +82,7 @@ const YouMayAlsoLike = () => {
          </h2>
       </div>
 
-      {/* Grid / Carousel Layout */}
+      {/* Grid  */}
       <div className="relative group overflow-hidden">
 
         
@@ -101,7 +100,6 @@ const YouMayAlsoLike = () => {
                             alt={guide.title}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-105"
                         />
-                        {/* Overlay text (Optional, usually visible on hover or mobile) */}
                         <div className="absolute inset-0 bg-black/0 group-hover/card:bg-black/10 transition-colors" />
                     </div>
 
@@ -118,7 +116,6 @@ const YouMayAlsoLike = () => {
             ))}
         </div>
 
-        {/* Right Arrow Button (Floating) */}
         <div className="absolute top-1/2 -right-4 -translate-y-1/2 hidden md:flex">
              <button className="w-12 h-12 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center hover:scale-105 transition-transform z-10 text-gray-800">
                  <ChevronRight size={24} />

@@ -18,7 +18,6 @@ const Itinerary = () => {
         [68.3, 14.6], [68.2, 14.4], [68.1, 13.9], [67.9, 13.1], [67.8, 12.9]
       ]
     },
-    // Add another dummy one to show scrolling
     {
       id: 2,
       title: "Western Fjords Adventure",
@@ -29,7 +28,7 @@ const Itinerary = () => {
     }
   ];
 
-  // --- FULL ITINERARY LIST VIEW ("Preview" Link) ---
+  // FULL ITINERARY LIST VIEW 
   if (showFullList) {
     return (
       <div className="fixed inset-0 z-[9999] bg-white flex flex-col animate-in fade-in duration-300">
@@ -66,7 +65,7 @@ const Itinerary = () => {
       
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        {/* --- LEFT: Text Content --- */}
+        {/* --- LEFT --- */}
         <div className="lg:col-span-4 space-y-6 pt-4">
           <h2 className="text-3xl font-black text-rexby-dark">
             1 itinerary
@@ -83,7 +82,7 @@ const Itinerary = () => {
           </button>
         </div>
 
-        {/* --- RIGHT: Scrolling Cards --- */}
+        {/* --- RIGHT --- */}
         <div className="lg:col-span-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-8">
 
@@ -134,7 +133,7 @@ const Itinerary = () => {
         </div>
       </div>
 
-      {/* --- POPUP MODAL (Email Signup) --- */}
+      {/* --- POPUP MODAL  --- */}
       {selectedItinerary && (
         <div className="fixed inset-0 z-[9999] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
           <div className="bg-white rounded-[32px] w-full max-w-md p-8 text-center relative shadow-2xl">

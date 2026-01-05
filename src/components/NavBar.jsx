@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="sticky top-0 z-[5000] bg-white border-b border-gray-200 shadow-sm py-4">
         <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-full">
           
-          {/* Left: Ask Question Link */}
+          {/* Left */}
           <button 
             onClick={scrollToAsk}
             className="text-rexby-dark font-bold underline decoration-2 underline-offset-4 text-sm md:text-base hover:text-gray-600 transition-colors"

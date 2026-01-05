@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Globe, Menu, X, Check } from 'lucide-react';
 
-// 1. Accept 'onLoginClick' as a prop
+// Accept 'onLoginClick' as a prop
 const Header = ({ onLoginClick }) => {
   const [showLanguages, setShowLanguages] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -36,7 +36,7 @@ const Header = ({ onLoginClick }) => {
       {/* Right Actions */}
       <div className="flex items-center gap-4">
         
-        {/* 2. Attach the prop to the onClick event */}
+        {/* Attach the prop to the onClick event */}
         <button 
           onClick={onLoginClick}
           className="hidden md:block px-6 py-2 rounded-xl border-2 border-white/30 text-white font-bold hover:bg-white hover:text-black transition-all text-sm backdrop-blur-sm"
@@ -89,7 +89,6 @@ const Header = ({ onLoginClick }) => {
                  {menuItems.map((item) => (
                    <button 
                      key={item}
-                     // If it's the "Log in" item in the mobile menu, we can also trigger it
                      onClick={() => item === "Log in" ? onLoginClick() : null}
                      className="w-full text-left px-6 py-3 hover:bg-gray-50 text-sm font-bold text-gray-700 hover:text-teal-700 transition-colors"
                    >

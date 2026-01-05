@@ -8,7 +8,7 @@ const Footer = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           
-          {/* --- COLUMN 1: Brand & Mission (Span 5) --- */}
+          {/* --- COLUMN 1*/}
           <div className="lg:col-span-5 space-y-6">
             {/* Logo */}
             <div className="flex items-center gap-2 text-[#0e7f8d]">
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* --- COLUMN 2: Rexby Links (Span 2) --- */}
+          {/* --- COLUMN 2 --- */}
           <div className="lg:col-span-2 space-y-6">
             <h4 className="font-bold text-rexby-dark text-lg">Rexby</h4>
             <ul className="space-y-4 text-gray-400 font-medium text-sm">
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* --- COLUMN 3: Contact Us (Span 3) --- */}
+          {/* --- COLUMN 3 --- */}
           <div className="lg:col-span-3 space-y-6">
             <h4 className="font-bold text-rexby-dark text-lg">Contact us</h4>
             <ul className="space-y-4 text-gray-400 font-medium text-sm">
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* --- COLUMN 4: Our Licence (Span 2) --- */}
+          {/* --- COLUMN 4 --- */}
           <div className="lg:col-span-2 space-y-6">
             <h4 className="font-bold text-rexby-dark text-lg">Our licence</h4>
             <ul className="space-y-2 text-gray-400 font-medium text-sm">

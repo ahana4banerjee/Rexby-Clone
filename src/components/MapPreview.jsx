@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-
-// --- Fix for Default Icons ---
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
@@ -15,14 +13,12 @@ let DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
-// --- Helper Component to Fix "Grey Map" Issue ---
-// This forces Leaflet to check its container size and redraw tiles when the modal opens.
 const MapController = () => {
   const map = useMap();
   useEffect(() => {
     setTimeout(() => {
       map.invalidateSize(); 
-    }, 200); // Small delay to ensure container is fully visible before resizing
+    }, 200); 
   }, [map]);
   return null;
 };
@@ -55,7 +51,7 @@ const MapPreview = () => {
         {/* The Map */}
         <div className="w-full h-full">
             <MapContainer center={[62.0, 10.0]} zoom={5} className="w-full h-full bg-gray-100">
-                {/* Standard OSM Tiles (The "Real" Map look) */}
+                {/* Standard OSM Tiles */}
                 <TileLayer 
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
                     attribution='&copy; OpenStreetMap contributors'
@@ -63,8 +59,7 @@ const MapPreview = () => {
                 <Marker position={[68.3, 14.6]}><Popup>Lofoten Islands</Popup></Marker>
                 <Marker position={[60.39, 5.32]}><Popup>Bergen</Popup></Marker>
                 <Marker position={[59.91, 10.75]}><Popup>Oslo</Popup></Marker>
-                
-                {/* This fixes the render issue! */}
+            
                 <MapController />
             </MapContainer>
         </div>
@@ -77,7 +72,7 @@ const MapPreview = () => {
     <section className="max-w-[1200px] mx-auto px-6 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        {/* Left Side: Text */}
+        {/* Left Side */}
         <div className="lg:col-span-5 space-y-6">
           <h2 className="text-4xl md:text-5xl font-black text-black leading-[1.1]">
             Explore with my Map
@@ -95,7 +90,7 @@ const MapPreview = () => {
           </button>
         </div>
 
-        {/* Right Side: Map Card */}
+        {/* Right Side */}
         <div className="lg:col-span-7">
           <div 
             onClick={() => setIsFullMap(true)}
